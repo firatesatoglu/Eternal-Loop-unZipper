@@ -11,9 +11,7 @@ def zipacıcı(zipadi):
             sifre = iceridekiDosyadı[0].split(".")
 
             rarDosya.extractall(pwd = bytes(sifre[0], 'utf-8'))
-            # os.remove(zipadi)
-            sayac += 1
             print(f"{sayac}. Dosya açıldı. Şifre {sifre[0]} ")
-            zipadi = iceridekiDosyadı[0]    # zipacıcı(iceridekiDosyadı[0])
+            zipadi = iceridekiDosyadı[0]
 
 zipacıcı(str(input("Zip dosyasının adını gir= ")))
